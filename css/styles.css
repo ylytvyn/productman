@@ -247,3 +247,35 @@ body {
 	bottom: 45px;
 	left: 35px;
 }
+
+.social {
+	font-size: 0;
+	text-align: center;
+}
+
+.social li {
+	display: inline-block;
+	font-size: 34px;
+	margin: 0 10px;
+}
+
+.social a {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #979797;
+	background: #fff;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+.social a:hover {
+	background: var(--red);
+	color: #fff;
+}
+
+.social i {
+	transition: none;
+}
