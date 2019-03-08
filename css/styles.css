@@ -3,6 +3,7 @@
 	--roboto: Roboto, sans-serif;
 	--red: #e10011;
 	--grey: #303030;
+	--lightgrey: #979797;
 }
 
 * {
@@ -248,9 +249,72 @@ body {
 	left: 35px;
 }
 
+.newsletter {
+	text-align: center;
+	margin: 95px auto 105px;
+	max-width: 700px;
+	width: 100%;
+}
+
+.newsletter .title {
+	font-size: 48px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.newsletter .description {
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0 10% 35px;
+}
+
+.form {
+	display: flex;
+	height: 70px;
+	letter-spacing: .25px;
+}
+
+.form label {
+	width: 60px;
+	padding-right: 5px;
+	text-align: right;
+	background: #fff;
+	color: var(--lightgrey);
+	border-radius: 35px 0 0 35px;
+	line-height: 70px;
+	font-size: 18px;
+}
+
+.form input {
+	flex-grow: 1;
+	font: italic 600 18px/24px var(--raleway);
+	color: var(--grey);
+	padding: 0 15px;
+}
+
+.form input::-webkit-input-placeholder {
+	color: var(--lightgrey);
+}
+
+.form button {
+	padding: 0 45px 0 55px;
+	background: var(--red);
+	font: 900 18px var(--roboto);
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 0 35px 35px 0;
+	cursor: pointer;
+}
+
+.form button:hover {
+	background: var(--grey);
+}
+
 .social {
 	font-size: 0;
 	text-align: center;
+	margin-bottom: 65px;
 }
 
 .social li {
@@ -265,7 +329,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #979797;
+	color: var(--lightgrey);
 	background: #fff;
 	text-decoration: none;
 	border-radius: 50%;
@@ -278,4 +342,15 @@ body {
 
 .social i {
 	transition: none;
+}
+
+.copyright {
+	font-size: 18px;
+	color: var(--lightgrey);
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.copyright span {
+	color: var(--grey);
 }
